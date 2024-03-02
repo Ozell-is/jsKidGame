@@ -1,11 +1,11 @@
 let s = 60;
 let intervalId
-let timer = () => {
+let timerCalcul = () => {
     if (s > 0) {
         intervalId = setInterval(() => {
             s--;
             document.getElementById('timerCalcul').textContent = s;
-            verifWinTimer();
+            verifWinTimerCalcul();
         }, 1000)
     } 
 }

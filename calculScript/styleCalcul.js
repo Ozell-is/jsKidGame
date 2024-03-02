@@ -6,7 +6,7 @@ startCalcul.addEventListener('click', function () {
         // Si l'élément container est trouvé, retirer la classe hidden
         container.classList.remove('hidden');
         startCalcul.classList.add('hidden')
-        timer();
+        timerCalcul();
     } else {
         console.error("L'élément container n'a pas été trouvé.");
     }

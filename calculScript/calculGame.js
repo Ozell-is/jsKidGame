@@ -80,7 +80,7 @@ function continueGame() {
         calculLVL4();
         console.log('level 4')
     } else if (games = 20) {
-        verifWinScore();
+        verifWinScoreCalcul();
     }
 }
 

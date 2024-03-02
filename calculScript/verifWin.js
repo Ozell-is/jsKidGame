@@ -1,4 +1,4 @@
-function verifWinTimer(){
+function verifWinTimerCalcul(){
     if (s == 0) {
         document.getElementById('calcul').innerHTML = `vous avez un score de ${score} point, malheuresement vous n'avez pas fini avant la fin du temps imparti`;
         document.getElementById('resultCalcul').disabled= true;
@@ -8,7 +8,7 @@ function verifWinTimer(){
 
 }
 
-function verifWinScore(){
+function verifWinScoreCalcul(){
     if(score >40) {
         document.getElementById('calcul').innerHTML = `felicitation vous avez un score de ${score} point`;
         document.getElementById('resultCalcul').disabled= true;
