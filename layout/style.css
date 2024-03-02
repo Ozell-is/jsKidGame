@@ -1,24 +1,30 @@
-
 .navbar {
-    position: fixed; /* Fixe la barre de navigation en haut de la page */
-    width: 100%; /* Définit la largeur de la barre de navigation à 100% */
-    z-index: 1000; /* Assure que la barre de navigation est au-dessus du contenu */
+    position: fixed;
+    /* Fixe la barre de navigation en haut de la page */
+    width: 100%;
+    /* Définit la largeur de la barre de navigation à 100% */
+    z-index: 1000;
+    /* Assure que la barre de navigation est au-dessus du contenu */
 }
 
 .hidden {
-    display:none;
+    display: none;
 }
 
-.level1 {
+/* Styles communs à tous les niveaux */
+#calculContainer.level1 {
     background-color: rgb(141, 187, 248);
 }
-.level2 {
+
+#calculContainer.level2 {
     background-color: rgb(69, 148, 250);
 }
-.level3 {
+
+#calculContainer.level3 {
     background-color: rgb(14, 89, 188);
 }
-.level4 {
+
+#calculContainer.level4 {
     background-color: rgb(2, 40, 90);
     color: rgb(194, 5, 5);
 }

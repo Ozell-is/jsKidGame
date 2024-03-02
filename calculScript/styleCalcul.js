@@ -1,6 +1,6 @@
 let startCalcul = document.getElementById('startCalcul');
 //commence la partie une fois le bouton cliqué
-startCalcul.addEventListener('click',function(){
+startCalcul.addEventListener('click', function () {
     let container = document.getElementById('calculContainer');
     if (container) {
         // Si l'élément container est trouvé, retirer la classe hidden
@@ -12,20 +12,14 @@ startCalcul.addEventListener('click',function(){
     }
 
 })
-//change la couleur de fond en fonction du level
+
+
+
+// Fonction pour appliquer le style en fonction du niveau
 let calculStyle = (level) => {
     let container = document.getElementById('calculContainer');
-    
-    if (level ==1) {
-        container.classList.add('level1')
-    } else if (level == 2) {
-        container.classList.add('level2')
-    } else if (level == 3) {
-        container.classList.add('level3')
-    } else if (level == 4) {
-        container.classList.add('level4')
-    }
+    container.className = ' py-5'; // Efface toutes les classes existantes
+    container.classList.add('level' + level); // Ajoute la classe correspondant au niveau
 }
 
-
-
+// Appel de la fonction pour appliquer le style au niveau 1

@@ -42,7 +42,7 @@ function resultSubmit() {
     }
     document.getElementById('scoreCalcul').textContent = score;
     document.getElementById('levelCalcul').textContent = level
-    
+
     calculStyle(level);
     clearResult();
     continueGame();
