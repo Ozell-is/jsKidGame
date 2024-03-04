@@ -50,7 +50,7 @@ function resultSubmit() {
 //add event listener pour la soumissions du form
 document.getElementById('formCalcul').addEventListener('submit', (e) => {
     e.preventDefault();
-    resultSubmit
+    
 })
 
 

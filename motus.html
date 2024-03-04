@@ -16,6 +16,8 @@
     <script src="motusScript/index.js" defer></script>
     <script src="motusScript/styleMotus.js" defer></script>
     <script src="motusScript/timerMotus.js" defer></script>
+    <script src="motusScript/startMotus.js" defer></script>
+    <script src="motusScript/createList.js" defer></script>
 
 
 </head>
@@ -30,20 +32,24 @@
                 <div class="row ">
                     <h1 class="col-12 d-flex justify-content-center">Motus Game</h1>
                     <h2 class="col-4">nombre d'animaux deviné :<span id="scoreMotus">0</span> </h2>
-                    <div class="col-4"> <span id=""></span></div>
+                    <div class="col-4"> <span></span></div>
                     <h2 class="col-4">Time : <span id="timerMotus">120</span></h2>
                     <div class="row d-flex justify-content-center">
                         <div class="col-4"></div>
-                        <p class="col-8">Veuillez trouver cette animal de <span class="motuslength"></span>lettres</p>
+                        <p class="col-8" id="motus">Veuillez trouver cette animal de <span id="motusLength"></span>
+                            lettres</p>
+                            <div class="col-4"></div>
+                        <p class="col-8" >Ces lettres sont présentes dans le mot <span id="goodLetter"></span></p>
                     </div>
                     <div class="row">
 
+                        <ul id="listMotus">
 
-                        <p id="motusWord" class="col-6">re</p>
-                        <form action="" method="post" id="formMotus" onsubmit="return resultSubmit();" class="col-6">
+                        </ul>
+                        <form action="" method="post" id="formMotus" class="col-6">
                             <label for="resultMotus">resultat:</label>
-                            <input type="text" id="resultCalcul" name="resultMottus" required>
-                            <button type="submit" id="submitMotuss">valider
+                            <input type="text" id="resultMotus" name="resultMotus" required>
+                            <button type="submit" id="submitMotus">valider
                             </button>
                         </form>
                     </div>
